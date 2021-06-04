@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,900|Montserrat|Roboto');
+ * {
+	 padding: 0;
+}
+ body {
+	 background: linear-gradient(to right, #C3F3E1, #E3D0F1);
+	 height:1400px;
+}
+  
+   
+  .mainphoto{
+	  width:210px;
+	  margin-left:150px;
+  }
+
+ .container {
+	 background: linear-gradient(-45deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.1));
+	 width: 1000px;
+	 height: 1300px;
+	 position: relative;
+	 margin: auto auto;
+	 margin-top: 5%;
+	 border-radius: 5px;
+	 box-shadow: 2px 4px 6px rgba(55, 52, 73, .4), inset -2px -2px 4px rgba(255, 255, 255, 1);
+}
+ .leftbox {
+	 background: linear-gradient(180deg, #F398F3 0%, rgba(209, 162, 209, 0.81) 100%);
+	 float: left;
+	 position: absolute;
+	 width: 10%;
+	 height: 105%;
+	 border: 1px solid rgba(126, 211, 134, 0.45);
+	 border-radius: 3px;
+	 box-shadow: 2px 4px 6px rgba(55, 52, 73, .4), inset -2px -2px 4px rgba(232, 247, 234, 0.7);
+	 top: -2.45%;
+	 left: 5%;
+}
+ .leftbox nav .active {
+	 color: #B61EB6;
+}
+ .leftbox nav a {
+	 color: #f2f2f2;
+	 font-size: 2rem;
+	 display: block;
+	 padding: 30px;
+	 align-items: center;
+	 text-align: center;
+	 transition: all 0.4s ease-in-out;
+}
+ .leftbox nav a:hover {
+	 color: #B61EB6;
+	 transform: scale(1.2);
+	 cursor: pointer;
+}
+ .rightbox {
+	 float: right;
+	 padding: 10px 20px;
+	 width: 70%;
+}
+ .rightbox .noshow {
+	 display: none;
+}
+ .rightbox .profile, .rightbox .password {
+	 transition: opacity 0.5s ease-in;
+	 position: absolute;
+	 width: 70%;
+}
+ .rightbox .profile h1, .rightbox .password h1 {
+	 font-family: 'Montserrat', sans-serif;
+	 color:black;
+	 font-size: 1.8em;
+	 margin-top: 40px;
+	 margin-bottom: 35px;
+}
+ .rightbox .profile h2, .rightbox .password h2 {
+	 font-family: 'Roboto', sans-serif;
+	 color: #515151;
+	 font-size: 1rem;
+	 letter-spacing: 1px;
+	 width: 80%;
+}
+ .rightbox .profile p, .rightbox .password p, {
+	 width: 90%;
+	 font-family: 'Montserrat', sans-serif;
+	 letter-spacing: 1px;
+	 border-width: 1px;
+	 border-style: solid;
+	 border-image: linear-gradient(to right, #3fb6a8, rgba(164, 224, 170, .9)) 1 0%;
+	 border-top: none;
+	 padding: 7px 0;
+	 color: #fff;
+}
+ .rightbox .profile input[type=text], .rightbox .password input[type=password],.rightbox .profile input[type=email] {
+	 border: none;
+	 font-family: 'Montserrat', sans-serif;
+	 font-size: 0.875rem;
+	 font-weight:bold;
+	 background: none;
+	 color: #817081;
+	 width: 100%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     box-sizing: border-box;
+     border: none;
+     border-bottom: 2px solid #8A0C8A;
+}
+
+
+.bg-gradient1 span, .bg-gradient1:before {
+	 background: #fa7e29;
+	 background: -moz-linear-gradient(180deg, #D98FF2 0%, rgba(183, 140, 283, 0.81) 100%);
+	 background: -webkit-linear-gradient(180deg, #D98FF2 0%, rgba(183, 140, 283, 0.81) 100%);
+	 background: linear-gradient(180deg, #D98FF2 0%, rgba(183, 140, 283, 0.81) 100%);
+}
+ 
+/* General */
+ 
+ a {
+	 text-decoration: none;
+}
+ a:hover, a:focus, a:active {
+	 text-decoration: none;
+}
+/* fancy Button */
+ .fancy-button {
+	 display: inline-block;
+	 font-family: 'Heebo', Helvetica, Arial, sans-serif;
+	 font-weight: 600;
+	 font-size: 14px;
+	 letter-spacing: 0.07em;
+	 color: #fff;
+	 position: relative;
+	 margin-left:200px;
+	 outline:none;
+   
+}
+ .fancy-button.bg-gradient1 {
+	 text-shadow: 0px 0px 1px #bf4c28;
+   
+}
+ 
+ .fancy-button:before {
+	 content: '';
+	 display: inline-block;
+	 height: 40px;
+	 position: absolute;
+	 bottom: -1px;
+	 left: 10px;
+	 right: 10px;
+	 z-index: -1;
+	 border-radius: 2em;
+	 filter: blur(14px) brightness(0.9);
+	 transform-style: preserve-3d;
+	 transition: all 0.3s ease-out;
+	 outline:none;
+
+   
+}
+
+ .fancy-button span {
+	 display: inline-block;
+	 padding: 16px 20px;
+	 border-radius: 50em;
+	 position: relative;
+	 z-index: 2;
+	 will-change: transform, filter;
+	 transform-style: preserve-3d;
+	 transition: all 0.3s ease-out;
+	 outline:none;
+
+}
+ .fancy-button:focus {
+	 color: #fff;
+}
+ .fancy-button:hover {
+	 color: #fff;
+}
+ .fancy-button:hover span {
+	 filter: brightness(0.9) contrast(1.2);
+	 transform: scale(0.96);
+}
+ .fancy-button:hover:before {
+	 bottom: 3px;
+	 filter: blur(6px) brightness(0.8);
+}
+ .fancy-button:active span {
+	 filter: brightness(0.75) contrast(1.7);
+}
+
+#message {
+  display:none;
+  background:none;
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -30px;
+  content: "✔";
+}
+
+
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -30px;
+  content: "✖";
+}
+
+/*
+ .rightbox .profile p input:focus, .rightbox .password p input:focus{
+	 outline: none;
+}
+ .rightbox .profile p ::placeholder, .rightbox .password p ::placeholder{
+	 color: #fff;
+}
+ .rightbox .profile button, .rightbox .password button{
+	 float: right;
+	 font-family: 'Roboto', sans-serif;
+	 text-transform: uppercase;
+	 font-size: 10px;
+	 padding: 1px;
+	 border: none;
+	 color: #256a62;
+	 background: none;
+}
+ .rightbox .profile button:hover, .rightbox .password button:hover {
+	 font-weight: 900;
+}*/
+
+
+.profile-pic {
+	 border-radius: 50%;
+	 height: 200px;
+	 width: 200px;
+	 background-size: cover;
+	 background-position: center;
+	 background-blend-mode: multiply;
+	 color: transparent;
+	 transition: all 0.3s ease;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 margin-left:180px;
+}
+ .profile-pic:hover {
+	 background-color: rgba(0, 0, 0, .5);
+	 z-index: 10000;
+	 color: rgba(250, 250, 250, 1);
+	 transition: all 0.3s ease;
+}
+ .profile-pic span {
+	 display: inline-flex;
+	 padding: 0.2em;
+}
+ 
+

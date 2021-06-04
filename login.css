@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
+ * {
+	 box-sizing: border-box;
+}
+
+
+ .sr-only {
+	 visibility: hidden;
+}
+ .hidden {
+	 width: 0;
+	 height: 0;
+	 visibility: hidden;
+	 display: none;
+	 overflow: hidden;
+}
+ html {
+	 font-size: 16px;
+}
+ body {
+	 display: flex;
+	 padding: 0;
+	 margin: 0;
+	 align-items: center;
+	 flex-direction: column;
+	 min-height: 100vh;
+	 font-family: "Rubik", sans-serif;
+	 position: relative;
+	 background-color: #fbfcfc;
+	 background-image: url("https://picsum.photos/id/413/1920/1080");
+	 background-repeat: no-repeat;
+	 background-size: cover;
+}
+ .challenge-title {
+	 text-align: center;
+	 padding: 0;
+	 margin: 6rem 0 0.5rem;
+	 color: white;
+	 font-size: 3rem;
+	 font-weight: bold;
+}
+
+ .login-card {
+	 margin:3rem;
+	 width: 800px;
+	 min-height: 400px;
+	 display: flex;
+	 align-items: stretch;
+	 border-radius: 0.5rem;
+	 overflow: hidden;
+	 box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+	 border: 1px solid rgba(255, 255, 255, 0.18);
+  
+}
+ .login-glass {
+	 flex: 0 0 40%;
+	 background-color: rgba(255, 255, 255, 0.35);
+	 backdrop-filter: blur(5px);
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+   width:30%;
+}
+
+ .login-form-container {
+	 flex: 0 0 60%;
+	 display: flex;
+	 flex-direction: column;
+	 padding: 2rem;
+	 backdrop-filter:blur(10px);
+   background-color: rgba(255, 255, 255, 0.35);
+}
+ .login-form-container .login-title {
+	 font-size: 1.75rem;
+	 font-weight: bold;
+	 text-align: center;
+	 padding: 0 0 2rem;
+   color:white;
+}
+ .login-form-container .form-control {
+	 display: flex;
+	 align-items: center;
+	 position: relative;
+	 width: 100%;
+}
+ .login-form-container .form-control:not(:last-of-type) {
+	 margin-bottom: 1.5rem;
+}
+ .login-form-container .form-control > label {
+	 position: absolute;
+	 font-weight: bold;
+	 color: #4d555f;
+	 top: 0;
+	 left: 0.75rem;
+	 transform: translateY(-50%);
+	 padding: 0 0.25rem;
+}
+ .login-form-container .form-control > input {
+	 flex: 1 0 auto;
+	 padding: 0.875rem;
+	 border-radius: 0.5rem;
+   font-size:1.25rem;
+	 border: 1px solid #d1d5da;
+	 transition: border-color 0.2s ease;
+	 box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+ .login-form-container .form-control > input:hover {
+	 border-color: #BA1A1F;
+}
+ .login-form-container .form-control > input:focus {
+	 outline:0;
+	 border-color: #BA1A1F;
+}
+ .login-form-container .form-control .form-remembe, .login-form-container .form-control .form-forgot {
+	 flex: 1 0 50%;
+	 display: flex;
+	 align-items: center;
+}
+ .login-form-container .form-control .form-remembe label {
+	 cursor: pointer;
+	 color: #F7F2F3;
+	 transition: color 0.2s ease;
+	 padding-left: 0.5rem;
+	 position: relative;
+   font-size:1.1rem;
+}
+ .login-form-container .form-control .form-remembe label:hover {
+	 color: #5E0F12;
+}
+ .login-form-container .form-control .label::before {
+	 content: '\f0c8';
+	 position: absolute;
+	 font-family: 'Font Awesome 5 Free';
+	 top: 50%;
+	 transform: translateY(-50%);
+	 left: 0.875rem;
+}
+ .login-form-container .form-control .form-remembe input:hover + label {
+	 color: #77081C;
+}
+ .login-form-container .form-control .input:checked + label::before {
+	 content: '\f14a';
+}
+ .login-form-container .form-control .input {
+	 cursor: pointer;
+	 margin: 0;
+	 opacity: 0;
+}
+
+.form-remembe{
+ color: #F7F2F3;
+	 font-size: 1rem;
+	 text-decoration: none;
+}
+
+.form-remebe input:checked + label::before{
+  content:'\f14a';
+  
+}
+
+ .login-form-container .form-control .form-forgot {
+	 justify-content: flex-end;
+}
+ .login-form-container .form-control .form-forgot a, .login-form-container .form-control .form-forgot a:focus {
+	 color: #F7F2F3;
+	 font-size: 1rem;
+	 font-weight: bold;
+	 text-decoration: none;
+}
+ .login-form-container .form-control .form-forgot a:hover, .login-form-container .form-control .form-forgot a:focus:hover, .login-form-container .form-control .form-forgot a:active, .login-form-container .form-control .form-forgot a:focus:active {
+	 text-decoration: underline;
+}
+ .btn {
+	 display: flex;
+	 align-items: center;
+	 background-color: #e56b6f;
+	 border: 0;
+	 color: white;
+	 padding: 0.875rem 1rem;
+	 font-size: 1rem;
+	 border-radius: 0.25rem;
+	 border: 1px solid #e56b6f;
+	 transition: background-color 0.1s ease-in;
+	 cursor: pointer;
+	 box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+ .btn:hover {
+	 background-color: #e98184;
+}
+ .btn:active {
+	 background-color: #e1555a;
+}
+ .btn:focus {
+	 outline: 1px dotted #c72328;
+}
+ .btn.btn-full {
+	 flex: 1 0 auto;
+	 font-weight: bold;
+	 font-size: 1.1rem;
+	 justify-content: center;
+}
+ .btn.btn-default {
+	 background-color: #fff;
+	 color: #98a1ad;
+	 border-color: #d1d5da;
+}
+ .btn.btn-default:hover {
+	 background-color: #f2f2f2;
+}
+ .btn.btn-default:active {
+	 background-color: #e6e6e6;
+ }
+ 
+
+ 
